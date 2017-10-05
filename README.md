@@ -11,7 +11,7 @@ service docker start | 起 docker server
 docker images        | 目前擁有的images
 docker run -it [ImageID] /bin/bash | run images
 docker commit [container name] hello-world:v1.0 | 打包image
-docker rmi Image Image | 刪除 images
+docker rmi [ImageID] | 刪除 images
 
 
 指令                 | 功能
@@ -19,6 +19,7 @@ docker rmi Image Image | 刪除 images
 docker exec -it [containerID] bash | 進入 container
 docker ps            | 目前正在 run 的 container
 sudo docker stop [containerID] | 停止 container 
+docker rm [containerID] | 刪除 container
 
 
 #### Docker file
