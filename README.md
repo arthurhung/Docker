@@ -39,4 +39,4 @@ RUN pip install -r requirements.txt
 ADD . /code/
 ```
 
-docker build .
+docker build -t [fileName] .
