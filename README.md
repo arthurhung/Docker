@@ -18,6 +18,7 @@ docker rmi Image Image | 刪除 images
 -------------------- |------------------------
 docker exec -it [containerID] bash | 進入 container
 docker ps            | 目前正在 run 的 container
+sudo docker stop [containerID] | 停止 container 
 
 
 #### Docker file
