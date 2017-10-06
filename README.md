@@ -30,13 +30,22 @@ python 3 範例
 
 
 ```
-FROM python:3 
+FROM python:3
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /code
-WORKDIR /code
-ADD requirements.txt /code/
+RUN git clone http://stsuser:stsuser.130@128.110.22.99/sts/loan.git
+RUN git clone http://stsuser:stsuser.130@128.110.22.99/sts/sinoTradeWebStatic.git
+RUN git clone http://stsuser:stsuser.130@128.110.22.99/sts/sinoTradeWebRestAPI.git
+RUN mv sinoTradeWebStatic static
+RUN mv sinoTradeWebRestAPI rest
+RUN cd /loan
+WORKDIR /loan
 RUN pip install -r requirements.txt
-ADD . /code/
+
+RUN mkdir /loan/logs
+
+# VOLUME ["/etc/nginx"]
+EXPOSE 80 443
+
 ```
 
 docker build -t [fileName] .
