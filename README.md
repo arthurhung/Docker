@@ -49,3 +49,10 @@ EXPOSE 80 443
 ```
 
 docker build -t [fileName] .
+
+#### Docker volumes
+
+sudo docker run -it --name logs -d -v /ap/loan-logs:/loan/logs 7660c37b5abb
+sudo docker run -it --name [comtainerName] -d -v /host/path:/docker/path [imagesID]
+
+
