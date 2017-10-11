@@ -1,5 +1,5 @@
 # Docker
-### Docker 指令
+## Docker 指令
 
 指令                 | 功能
 -------------------- |------------------------
@@ -19,10 +19,11 @@ docker rmi [ImageID] | 刪除 images
 docker exec -it [containerID] bash | 進入 container
 docker ps            | 目前正在 run 的 container
 sudo docker stop [containerID] | 停止 container 
+sudo docker start [containerID] | 啟動 container 
 docker rm [containerID] | 刪除 container
 
 
-### Docker file
+## Docker file
 
 python 3 範例
 用 requirements.txt 安裝 python 套件
@@ -50,7 +51,7 @@ EXPOSE 80 443
 
 docker build -t [fileName] .
 
-### Docker volumes
+## Docker volumes
 
 sudo docker run -it --name logs -d -v /ap/loan-logs:/loan/logs 7660c37b5abb
 sudo docker run -it --name [comtainerName] -d -v /host/path:/docker/path [imagesID]
