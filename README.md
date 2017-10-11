@@ -44,7 +44,6 @@ RUN pip install -r requirements.txt
 
 RUN mkdir /loan/logs
 
-# VOLUME ["/etc/nginx"]
 EXPOSE 80 443
 
 ```
