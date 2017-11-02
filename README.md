@@ -33,9 +33,9 @@ python 3 範例
 ```
 FROM python:3
 ENV PYTHONUNBUFFERED 1
-RUN git clone http://stsuser:stsuser.130@128.110.22.99/sts/loan.git
-RUN git clone http://stsuser:stsuser.130@128.110.22.99/sts/sinoTradeWebStatic.git
-RUN git clone http://stsuser:stsuser.130@128.110.22.99/sts/sinoTradeWebRestAPI.git
+RUN git clone http://stsuser:****@128.110.22.99/sts/loan.git
+RUN git clone http://stsuser:****@128.110.22.99/sts/sinoTradeWebStatic.git
+RUN git clone http://stsuser:****@128.110.22.99/sts/sinoTradeWebRestAPI.git
 RUN mv sinoTradeWebStatic static
 RUN mv sinoTradeWebRestAPI rest
 RUN cd /loan
