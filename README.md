@@ -57,3 +57,5 @@ sudo docker run -it --name logs -d -v /ap/loan-logs:/loan/logs 7660c37b5abb
 sudo docker run -it --name [comtainerName] -d -v /host/path:/docker/path [imagesID]
 ```
 
+# Other 
+tzdata 更改時區
