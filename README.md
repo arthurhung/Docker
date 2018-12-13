@@ -12,7 +12,7 @@ docker images        | 目前擁有的images
 docker run -it [ImageID] /bin/bash | run images
 docker commit [container name] hello-world:v1.0 | 打包image
 docker rmi [ImageID] | 刪除 images
-
+docker rm $(docker ps -a -q) | 移除停止的contaioners
 
 指令                 | 功能
 -------------------- |------------------------
